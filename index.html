@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Blade & Beard</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__menu menu">
+        <nav class="menu__body">
+          <a href="../index.html" class="menu__logo"><img src="images/logo.svg" alt="Логотип"></a>
+          <ul class="menu__list" id="menu">
+            <li class="menu__item" data-menuanchor="promo"><a href="#promo" class="menu__link">о нас</a></li>
+            <li class="menu__item" data-menuanchor="services"><a href="#services" class="menu__link">услуги</a></li>
+            <li class="menu__item" data-menuanchor="portfolio"><a href="#portfolio" class="menu__link">работы</a></li>
+            <li class="menu__item" data-menuanchor="team"><a href="#team" class="menu__link">команда</a></li>
+            <li class="menu__item" data-menuanchor="contact"><a href="#contact" class="menu__link">контакты</a></li>
+            <li class="menu__item-mobile"><a class="menu__phone menu__phone-mobile _icon-phone" href="tel:+78005556565">+7 800 555-65-65</a></li>
+            <li class="menu__item-mobile"><button class="menu__button menu__button-mobile button">Записаться</button></li>
+          </ul>
+          <a class="menu__phone _icon-phone" href="tel:+78005556565">+7 800 555-65-65</a>
+          <button class="menu__button button">Записаться</button>
+          <button type="button" class="menu__icon icon-menu"><span></span></button>
+          <div class="menu__burger"></div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================================================================================ -->
+
+  <main id="fullpage">
+
+    <section class="section promo" data-anchor="promo">
+      <video data-autoplay muted loop preload="auto" class="promo__video">
+        <source type="video/webm" data-src="../video/shortcut.webm">
+        <source type="video/mp4" data-src="../video/shortcut.mp4">
+      </video>
+      <div class="promo__shadow"></div>
+      <div class="promo__container">
+        <div class="promo__content">
+          <h2 class="promo__title">Выполняем стрижки
+            любой сложности</h2>
+          <p class="promo__text">Мужские парикмахерские с душевными барберами,
+            шотландским виски и уютным
+            интерьером. Уже пять лет воплощаем ваши самые смелые желания в реальность.</p>
+          <button class="button">Записаться на стрижку</button>
+        </div>
+      </div>
+    </section>
+    <section class="section services" data-anchor="services">
+      <div class="services__container">
+        <h2 class="services__title">Наши услуги</h2>
+        <div class="services__wraper">
+          <div class="services__list">
+            <div class="services__item spoller">
+              <button type="button" class="spoller__info">
+                <h3 class="spoller__title">Мужская стрижка</h3>
+                <p class="spoller__price">2000 - 2500 р.</p>
+              </button>
+              <div class="spoller__desc">Контент спойлера</div>
+            </div>
+            <div class="services__item spoller">
+              <button type="button" class="spoller__info">
+                <h3 class="spoller__title">Мужская стрижка</h3>
+                <p class="spoller__price">2000 - 2500 р.</p>
+              </button>
+              <div class="spoller__desc">Контент спойлера</div>
+            </div>
+            <div class="services__item spoller">
+              <button type="button" class="spoller__info">
+                <h3 class="spoller__title">Мужская стрижка</h3>
+                <p class="spoller__price">2000 - 2500 р.</p>
+              </button>
+              <div class="spoller__desc">Контент спойлера</div>
+            </div>
+          </div>
+          <div class="services__list">
+            <div class="services__item spoller">
+              <button type="button" class="spoller__info">
+                <h3 class="spoller__title">Мужская стрижка</h3>
+                <p class="spoller__price">2000 - 2500 р.</p>
+              </button>
+              <div class="spoller__desc">Контент спойлера</div>
+            </div>
+            <div class="services__item spoller">
+              <button type="button" class="spoller__info">
+                <h3 class="spoller__title">Мужская стрижка</h3>
+                <p class="spoller__price">2000 - 2500 р.</p>
+              </button>
+              <div class="spoller__desc">Контент спойлера</div>
+            </div>
+          </div>
+          <div class="services__list">
+            <div class="services__item spoller">
+              <button type="button" class="spoller__info">
+                <h3 class="spoller__title">Мужская стрижка</h3>
+                <p class="spoller__price">2000 - 2500 р.</p>
+              </button>
+              <div class="spoller__desc">Контент спойлера</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section portfolio" data-anchor="portfolio">
+      <div class="portfolio__slider">
+        <div>
+          <div class="portfolio__wrapper">
+            <div class="portfolio__img">
+              <img data-lazy="images/portfolio/portfolio1.webp" alt="Портфолио">
+            </div>
+            <div class="portfolio__content cart">
+              <div class="cart__info">
+                <div class="cart__image"><img data-lazy="images/portfolio/portfolio1.webp" alt="Портфолио">
+                </div>
+                <div class="cart__text">
+                  <h3 class="cart__title">
+                    Класическая</h3>
+                  <p class="cart__desc">
+                    Стрижка которая всегда остается в тренде.
+                    Исполняется после анализа четырех основных факторов: строение
+                    черепа, натуральный рост и плотность волос, овал лица и стиль
+                    укладки. Варьируя длину можно скорректировать форму лица. Самая
+                    популярная модель на сегодня - стрижка средней длины с удлиненной
+                    или короткой челкой.</p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__shadow"></div>
+          </div>
+        </div>
+        <div>
+          <div class="portfolio__wrapper">
+            <div class="portfolio__img">
+              <img data-lazy="images/portfolio/portfolio1.webp" alt="Портфолио">
+            </div>
+            <div class="portfolio__content cart">
+              <div class="cart__info">
+                <div class="cart__image"><img data-lazy="images/portfolio/portfolio1.webp" alt="Портфолио">
+                </div>
+                <div class="cart__text">
+                  <h3 class="cart__title">
+                    Класическая</h3>
+                  <p class="cart__desc">
+                    Стрижка которая всегда остается в тренде.
+                    Исполняется после анализа четырех основных факторов: строение
+                    черепа, натуральный рост и плотность волос, овал лица и стиль
+                    укладки. Варьируя длину можно скорректировать форму лица. Самая
+                    популярная модель на сегодня - стрижка средней длины с удлиненной
+                    или короткой челкой.</p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__shadow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section team" data-anchor="team">
+      <div class="team__slider">
+        <div>
+          <div class="team__wrapper">
+            <div class="team__img">
+              <img data-lazy="images/team/barber1.webp" alt="Барбер">
+            </div>
+            <div class="team__content cart cart-small">
+              <div class="cart__info">
+                <div class="cart__text">
+                  <h3 class="cart__title">
+                    Григорий</h3>
+                  <p class="cart__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cupiditate optio eius?
+                    Laudantium
+                    temporibus doloribus asperiores voluptatibus molestias possimus repellat iure accusamus iste?
+                    Illum
+                    corrupti voluptate autem ea. Nam, quod.</p>
+                </div>
+              </div>
+            </div>
+            <div class="team__shadow"></div>
+          </div>
+        </div>
+        <div>
+          <div class="team__wrapper">
+            <div class="team__img">
+              <img data-lazy="images/team/barber2.webp" alt="Барбер">
+            </div>
+            <div class="team__content cart cart-small">
+              <div class="cart__info">
+                <div class="cart__text">
+                  <h3 class="cart__title">
+                    Михаэль</h3>
+                  <p class="cart__desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, maiores laboriosam? Dolor,
+                    necessitatibus! Distinctio nisi reprehenderit in repellendus voluptatum, vitae aliquid pariatur ab
+                    architecto error nemo quos. Recusandae, tempore similique!</p>
+                </div>
+              </div>
+            </div>
+            <div class="team__shadow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section contact" data-anchor="contact">
+      <div id="map" class="contact__map"></div>
+      <div class="contact__info">
+        <h2 class="contact__title">Контакты</h2>
+        <div class="contact__action">
+          <p class="_icon-clock">Ежедневно,<br> с 10:00 до 21:00</p>
+          <a href="mailto:example@mail.ru" class="_icon-mail">example@mail.ru</a>
+          <p class="_icon-location">ул. Петергофское<br> шоссе д.53</p>
+          <a href="tel:+78005556565" class="_icon-phone">+7 800 555-65-65</a>
+        </div>
+        <button class="button">Записаться на стрижку</button>
+        <div class="contact__social social">
+          <a href="https://www.facebook.com/" class="social__link" target="blank">
+            <i class="social__icon _icon-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="social__link" target="blank">
+            <i class="social__icon _icon-instagram"></i>
+          </a>
+          <a href="https://www.twitter.com/" class="social__link" target="blank">
+            <i class="social__icon _icon-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__container">
+          <p>copyright © 2022</p>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <div class="popup">
+    <form class="popup__form" action="#">
+      <button type="button" class="close">Закрыть</button>
+      <div class="form__field">
+        <label for="name" class="form__label">Ваше имя*</label>
+        <input id="name" name="name" type="text" class="form__input" required>
+      </div>
+      <div class="form__field">
+        <label for="phone" class="form__label">Ваш телефон*</label>
+        <input id="phone" name="phone" type="text" class="form__input" required>
+      </div>
+      <div class="form__field">
+        <label for="servicesList" class="form__label">Выберите услугу*</label>
+        <select id="serviceList" name="serviceList" class="form__select" required>
+          <option value="Услуга 1">Услуга 1</option>
+          <option value="Услуга 2">Услуга 2</option>
+          <option value="Услуга 3">Услуга 3</option>
+          <option value="Услуга 4">Услуга 4</option>
+      </select>
+      </div>
+      <div class="form__field">
+        <label for="dateTime" class="form__label">Выберите дату и время*</label>
+        <input id="dateTime" name="date" type="text" class="form__input" required>
+      </div>
+      <button class="form__button" type="submit">Записаться</button>
+    </form>
+  </div>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
+  <script src="scripts/fullpage.min.js"></script>
+  <script src="scripts/air-datepicker.js"></script>
+  <script src="scripts/jquery.nice-select.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;coordorder=longlat"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

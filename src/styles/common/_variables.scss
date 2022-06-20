@@ -1,0 +1,41 @@
+// colors
+
+$colorWhite: #fff;
+$colorBlack: #323234;
+$colorOrange: #C99D6A;
+
+// indents
+
+// breakpoints
+
+$pc: 1439.98px;
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileSmall: 479.98px;
+
+// @extend
+
+%montserratRegular {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+%montserratMedium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+%montserratSemiBold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+%montserratBold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+%stixRegular {
+  font-family: 'STIX Two Text', sans-serif;
+  font-weight: 400;
+}

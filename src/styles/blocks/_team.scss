@@ -1,0 +1,25 @@
+.team {
+  @include slider;
+
+  &__wrapper {
+    justify-content: flex-start;
+  }
+
+  &__content {
+    position: absolute;
+    left: 6%;
+    max-height: 100%;
+
+    @media (max-width:$mobile){
+      position: static;
+    }
+  }
+
+  &__img img {
+    object-position: left 90px;
+
+    @media (max-width:$mobile){
+      object-position: 80% 90px;
+    }
+  }
+}

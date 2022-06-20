@@ -1,0 +1,99 @@
+.popup {
+  display: block;
+  position: absolute;
+  top: 80px;
+  right: -100vw;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  margin: 0;
+  padding: 15px;
+  background-color: $colorBlack;
+  overflow: hidden;
+  opacity: 0;
+  transition: all .8s ease 0s;
+
+  &.open {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.close,
+.form__button {
+  @extend %montserratBold;
+  display: inline-flex;
+  padding: 10px 30px;
+  background-color: $colorOrange;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: all .3s ease-out 0s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: $colorBlack;
+      transform: scale(1.05);
+    }
+  }
+
+  @media (max-width:$mobile) {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+}
+
+.popup__form {
+  margin: auto;
+  max-width: 50%;
+
+  @media (max-width:$mobile){
+    max-width: 100%;
+  }
+}
+
+.form__field {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.form__label,
+.form__input,
+.form__select {
+  @extend %montserratMedium;
+  flex-basis: 100%;
+  color: $colorBlack;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 22px;
+  color: $colorOrange;
+  margin-bottom: 5px;
+}
+
+.form__input {
+  height: 42px;
+  padding: 0 18px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.list {
+  width: 100%;
+}
+
+.air-datepicker-time--row {
+  border-radius: 8px;
+  background-color: $colorBlack !important;
+  padding: 1px 5px;
+}
+
+.air-datepicker-time--row input {
+  color: $colorOrange !important;
+}
+
+.close,
+.form__button {
+  margin-top: 20px;
+}

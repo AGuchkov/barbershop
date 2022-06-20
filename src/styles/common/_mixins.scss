@@ -1,0 +1,99 @@
+@mixin title-h2 {
+  max-width: 562px;
+  @extend %stixRegular;
+  font-size: 50px;
+  line-height: 62px;
+
+  @media (max-width:$mobile) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+@mixin slider {
+  &__slider {
+    height: 100vh;
+  }
+
+  &__slider .slick-slide {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__slider .slick-slide,
+  &__slider .slick-track {
+    height: 100vh;
+
+    @media (max-width:$mobile) {
+      height: auto;
+    }
+  }
+
+  &__slider .slick-arrow {
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    width: 30px;
+    height: 30px;
+    padding: 25px;
+    font-size: 0;
+    background-color: rgba($colorWhite, .15);
+    background-image: url('../images/arrow-left-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid $colorWhite;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__slider .slick-prev {
+    left: 5%;
+  }
+
+  &__slider .slick-next {
+    left: calc(6% + 55px);
+    transform: rotate(180deg);
+  }
+
+  &__slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    bottom: 4.5%;
+
+    li {
+      width: 12px;
+      height: 12px;
+      background-color: $colorWhite;
+      border-radius: 50%;
+      font-size: 0;
+      transition: transform .3s ease 0s;
+    }
+
+    .slick-active {
+      transform: scale(1.2);
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+
+    @media (max-width:$mobile) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img img {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    object-fit: cover;
+  }
+}

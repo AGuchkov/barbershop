@@ -1,0 +1,24 @@
+// common files
+@import "common/_variables";
+@import "common/_fonts";
+@import "common/_icons";
+@import "common/_common";
+@import "common/_btn";
+@import "common/_cart";
+@import "common/_mixins";
+
+// blocks
+@import "blocks/_header";
+@import "blocks/_promo";
+@import "blocks/_services";
+@import "blocks/_portfolio";
+@import "blocks/_team";
+@import "blocks/_contact";
+@import "blocks/_footer";
+@import "blocks/_popup";
+
+// plugins
+@import "plugins/slick";
+@import "plugins/fullpage.min";
+@import "plugins/air-datepicker";
+@import "plugins/nice-select";
